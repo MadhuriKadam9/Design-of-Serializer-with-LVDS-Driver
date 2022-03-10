@@ -2,13 +2,14 @@
 This repository presents the design of Serializer with LVDS Driver for High Speed Application. It is implemented using eSim EDA Tool developed by FOSSEE IIT Bombay in 180nm technology node.<br/>
 # Table Of Content <br/>
 * [Abstract](https://github.com/MadhuriKadam9/Design-of-Serializer-with-LVDS-Driver/blob/main/README.md#abstract-)<br/>
-* [Serializer Block Diagram](https://github.com/MadhuriKadam9/Design-of-Serializer-with-LVDS-Driver/edit/main/README.md#serializer-block-diagram)<br/>
-* [Tool used](https://github.com/MadhuriKadam9/Design-of-Serializer-with-LVDS-Driver/edit/main/README.md#tool-used)<br/>
-* [Serializer Block Diagram with Circuit Diagram and Simulation waveforms in eSim Tool](https://github.com/MadhuriKadam9/Design-of-Serializer-with-LVDS-Driver/edit/main/README.md#serializer-block-diagram-with-circuit-diagram-and-simulation-waveforms-in-eSim-tool)<br/>
-* [Future Scope](https://github.com/MadhuriKadam9/Design-of-Serializer-with-LVDS-Driver/edit/main/README.md#future-scope)<br/>
-* [Authoured By](https://github.com/MadhuriKadam9/Design-of-Serializer-with-LVDS-Driver/edit/main/README.md#authoured-by)<br/>
-* [Acknowledgements](https://github.com/MadhuriKadam9/Design-of-Serializer-with-LVDS-Driver/edit/main/README.md#acknowledgements)<br/>
-* [References](https://github.com/MadhuriKadam9/Design-of-Serializer-with-LVDS-Driver/edit/main/README.md#references)<br/>
+* [Serializer Block Diagram](https://github.com/MadhuriKadam9/Design-of-Serializer-with-LVDS-Driver/blob/main/README.md#serializer-block-diagram)<br/>
+* [Tool used](https://github.com/MadhuriKadam9/Design-of-Serializer-with-LVDS-Driver/blob/main/README.md#tool-used)<br/>
+* [Serializer Block Diagram with Circuit Diagram and Simulation waveforms in eSim Tool](https://github.com/MadhuriKadam9/Design-of-Serializer-with-LVDS-Driver/blob/main/README.md#serializer-block-diagram-with-circuit-diagram-and-simulation-waveforms-in-eSim-tool)<br/>
+* [Future Scope](https://github.com/MadhuriKadam9/Design-of-Serializer-with-LVDS-Driver/blob/main/README.md#future-scope)<br/>
+* [Authoured By](https://github.com/MadhuriKadam9/Design-of-Serializer-with-LVDS-Driver/blob/main/README.md#authoured-by)<br/>
+* [Acknowledgements](https://github.com/MadhuriKadam9/Design-of-Serializer-with-LVDS-Driver/blob/main/README.md#acknowledgements)<br/>
+* [References](https://github.com/MadhuriKadam9/Design-of-Serializer-with-LVDS-Driver/edit/blob/README.md#references)<br/>
+
 # Abstract <br/>
 Serializer is a Mixed block which consists of PISO and Buffer as Digital Blocks and LVDS Driver is Analog Block. LVDS i.e. Low Voltage Differential Signaling is the interface used for high speed data transfer over transmission media such as coaxial cable or over PCB traces. It basically comprised of switched current sources which drives the transmission lines with differential signals. Salient features of this interface are low power operation, Noise rejection capability and reliable clock recovery at the receiver. This Driver circuit operates at 5V/3.3V of supply voltage. It consists of switched current sources and common mode feedback (CMFB) circuit to stabilize the output common mode voltage level. The design is implemented using eSim EDA tool in 180 nm technology node. It also helps to reduce the no. of ports in multiport operation as multiport parallel data can be multiplexed, serialized and transmitted over a cable with LVDS Driver.<br/>
 
