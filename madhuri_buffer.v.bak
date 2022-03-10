@@ -1,0 +1,5 @@
+module madhuri_buffer(a,y);
+	input a;
+	output y;
+	assign y=a;	
+endmodule
