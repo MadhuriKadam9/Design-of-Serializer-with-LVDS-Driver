@@ -33,6 +33,31 @@ eSim Open Source EDA Tool is used here. <br/>
 
 # Serializer Block Diagram with Circuit Diagram and Simulation waveforms in eSim Tool
 <img width="819" alt="Serializer_schematic" src="https://user-images.githubusercontent.com/88900482/157653926-8f0c5700-7535-4769-b27d-7650452599bd.PNG">
+## Parallel Input Serial Output (PISO) and Buffer Digital Block
+### PISO Symbol and Waveforms
+<img width="227" alt="piso-symbol" src="https://user-images.githubusercontent.com/88900482/157655823-3629b0e2-8c3b-457e-84e9-cf7350dd58e1.PNG">
+
+<img width="959" alt="PISO-op" src="https://user-images.githubusercontent.com/88900482/157656347-6c0043d5-3f56-4bf6-be8a-00f49dc13faf.PNG">
+
+### Buffer Symbol
+<img width="220" alt="Buffer_symbol" src="https://user-images.githubusercontent.com/88900482/157656035-19a58828-36f8-46c0-9775-c919af6c00c6.PNG">
+
+### PISO-Buffer Schematic and Waveform
+<img width="798" alt="piso-buff-sch" src="https://user-images.githubusercontent.com/88900482/157656150-214d2360-ae07-4bde-951e-2eb1d1747753.PNG">
+
+<img width="952" alt="Piso-buffer-op" src="https://user-images.githubusercontent.com/88900482/157656415-7790fdb6-82c6-4792-ab6d-486c527d4031.PNG">
+
+## LVDS Driver Analog Block
+### LVDS Driver Symbol
+<img width="395" alt="lvds-symbol" src="https://user-images.githubusercontent.com/88900482/157656655-f32167ca-98ab-4bdf-98d9-69165146b608.PNG">
+
+### LVDS Driver Schematic
+<img width="645" alt="lvds-dvr-subckt" src="https://user-images.githubusercontent.com/88900482/157656757-d4fb3767-69c2-443c-8c9b-7ef53caf2a11.PNG">
+
+### LVDS Driver Waveforms
+<img width="956" alt="lvds-dvr-op" src="https://user-images.githubusercontent.com/88900482/157656865-6dc8d57c-bed0-4220-aade-71dcee21c36d.PNG">
+
+<img width="957" alt="lvds-dvr-op-ovlp" src="https://user-images.githubusercontent.com/88900482/157656890-7d144c57-1669-41cb-85de-e4045f721c26.PNG">
 
 
 # Netlist <br/>
@@ -40,16 +65,17 @@ You can view the circuit netlists [here](https://github.com/MadhuriKadam9/LVDS-D
 You can view the Primesim log [here](https://github.com/MadhuriKadam9/LVDS-Driver-Design-for-High-Speed-Application/blob/main/Primesim-log.txt)<br/>
 
 # Future Scope
-LVDS Driver circuit can be redesigned and optimised to get Voap-p = 400 mV which is presently getting as 700 mV.  
+LVDS Driver circuit can be redesigned and optimised to get Voap-p = 350 mV which is presently getting as 500 mV.  
 
 # Authoured By <br/>
 Mrs. Madhuri Kadam, ME in Electronics and Telecommunication Engineering, Mumbai <br/>
 Assistant Professor, Shree L. R. Tiwari College of Engineering, Mira Rd
 
 # Acknowledgements <br/>
-[1. Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd.](https://www.linkedin.com/in/kunal-ghosh-vlsisystemdesign-com-28084836/)<br/>
-[2. Cloud Based Analog IC Design Hackathon](https://www.iith.ac.in/events/2022/02/15/Cloud-Based-Analog-IC-Design-Hackathon/)<br/>
-[3. Synopsys India](https://www.synopsys.com/)<br/>
+[1. Mr. Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd.](https://www.linkedin.com/in/kunal-ghosh-vlsisystemdesign-com-28084836/)<br/>
+[2. Prof. Kannan Moudgalya, PI, Mixed Signal Circuit Design and Simulation Marathon usign eSim](https://esim.fossee.in/mixed-signal-design-marathon/)<br/>
+[3. Mr. Steev Hoover,Redwod EDA](https://makerchip.com/)<br/>
+[4. Mr. Sumanto Kar,PS, FOSSEE IITB](https://esim.fossee.in/)<br/>
 
 # References <br/>
 [1]  Hari Shanker Gupta, RM Parmar and R K Dave, “High Speed LVDS     Driver for SERDES ,” IEEE Conference Proc., July 2009.
