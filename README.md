@@ -11,7 +11,7 @@ This repository presents the design of Serializer with LVDS Driver for High Spee
 * [Acknowledgements](https://github.com/MadhuriKadam9/Design-of-Serializer-with-LVDS-Driver/edit/main/README.md#acknowledgements)<br/>
 * [References](https://github.com/MadhuriKadam9/Design-of-Serializer-with-LVDS-Driver/edit/main/README.md#references)<br/>
 # Abstract <br/>
-LVDS i.e. Low Voltage Differential Signaling is the interface used for high speed data transfer over transmission media such as coaxial cable or over PCB traces. It basically comprised of switched current sources which drives the transmission lines with differential signals. Salient features of this interface are low power operation, Noise rejection capability and reliable clock recovery at the receiver. This Driver circuit operates at 5V/3.3V of supply voltage. It consists of switched current sources and common mode feedback (CMFB) circuit to stabilize the output common mode voltage level. The design is implemented using Synopsys tool using 28 nm technology node. It also helps to reduce the no. of ports in multiport operation as multiport parallel data can be multiplexed, serialized and transmitted over a cable with LVDS Driver.<br/>
+Serializer is a Mixed block which consists of PISO and Buffer as Digital Blocks and LVDS Driver is Analog Block. LVDS i.e. Low Voltage Differential Signaling is the interface used for high speed data transfer over transmission media such as coaxial cable or over PCB traces. It basically comprised of switched current sources which drives the transmission lines with differential signals. Salient features of this interface are low power operation, Noise rejection capability and reliable clock recovery at the receiver. This Driver circuit operates at 5V/3.3V of supply voltage. It consists of switched current sources and common mode feedback (CMFB) circuit to stabilize the output common mode voltage level. The design is implemented using eSim EDA tool in 180 nm technology node. It also helps to reduce the no. of ports in multiport operation as multiport parallel data can be multiplexed, serialized and transmitted over a cable with LVDS Driver.<br/>
 
 # LVDS Application Block diagram <br/>
 <img width="592" alt="Block Dig" src="https://user-images.githubusercontent.com/88900482/156181453-21946fee-9b2e-4dda-aa0b-55ee094b5067.PNG">
@@ -32,6 +32,8 @@ Above diagram shows a typical LVDS signal voltage and timing diagram, where outp
 eSim Open Source EDA Tool is used here. <br/>
 
 # Serializer Block Diagram with Circuit Diagram and Simulation waveforms in eSim Tool
+<img width="819" alt="Serializer_schematic" src="https://user-images.githubusercontent.com/88900482/157653926-8f0c5700-7535-4769-b27d-7650452599bd.PNG">
+
 
 # Netlist <br/>
 You can view the circuit netlists [here](https://github.com/MadhuriKadam9/LVDS-Driver-Design-for-High-Speed-Application/blob/main/LVDS_netlist.spi)<br/>
