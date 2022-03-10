@@ -30,17 +30,28 @@ Above diagram shows a typical LVDS signal voltage and timing diagram, where outp
 
 # Tool used<br/>
 eSim Open Source EDA Tool is used here. <br/>
+<img width="958" alt="eSim" src="https://user-images.githubusercontent.com/88900482/157658067-890cb833-ce5f-4246-9014-b4eff42cfc40.PNG">
+
 
 # Serializer Block Diagram with Circuit Diagram and Simulation waveforms in eSim Tool
 <img width="819" alt="Serializer_schematic" src="https://user-images.githubusercontent.com/88900482/157653926-8f0c5700-7535-4769-b27d-7650452599bd.PNG">
+
+
 ## Parallel Input Serial Output (PISO) and Buffer Digital Block
+
 ### PISO Symbol and Waveforms
 <img width="227" alt="piso-symbol" src="https://user-images.githubusercontent.com/88900482/157655823-3629b0e2-8c3b-457e-84e9-cf7350dd58e1.PNG">
 
 <img width="959" alt="PISO-op" src="https://user-images.githubusercontent.com/88900482/157656347-6c0043d5-3f56-4bf6-be8a-00f49dc13faf.PNG">
 
+<img width="958" alt="piso_makerchip" src="https://user-images.githubusercontent.com/88900482/157658184-2c5848a3-0bff-43d2-b382-085cfc70119d.PNG">
+
+
 ### Buffer Symbol
 <img width="220" alt="Buffer_symbol" src="https://user-images.githubusercontent.com/88900482/157656035-19a58828-36f8-46c0-9775-c919af6c00c6.PNG">
+
+<img width="960" alt="buffer_makerchip" src="https://user-images.githubusercontent.com/88900482/157658225-ef23426c-3a73-4f30-b0a9-dbb448025d99.PNG">
+
 
 ### PISO-Buffer Schematic and Waveform
 <img width="798" alt="piso-buff-sch" src="https://user-images.githubusercontent.com/88900482/157656150-214d2360-ae07-4bde-951e-2eb1d1747753.PNG">
