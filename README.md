@@ -80,8 +80,8 @@ Assistant Professor, Shree L. R. Tiwari College of Engineering, Mira Rd
 # Acknowledgements <br/>
 [1. Prof. Kannan Moudgalya, PI, Mixed Signal Circuit Design and Simulation Marathon usign eSim](https://esim.fossee.in/mixed-signal-design-marathon/)<br/>
 [2. Mr. Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd.](https://www.linkedin.com/in/kunal-ghosh-vlsisystemdesign-com-28084836/)<br/>
-[3. Mr. Steeve Hoover,Redwood EDA](https://makerchip.com/)<br/>
-[4. Mr. Sumanto Kar,PS FOSSEE IITB](https://fossee.in/)<br/>
+[3. Mr. Steeve Hoover, Redwood EDA](https://makerchip.com/)<br/>
+[4. Mr. Sumanto Kar,PS, FOSSEE IITB](https://fossee.in/)<br/>
 [5. Ms. A. Devipriya](https://github.com/Devipriya1921/vsdserializer_v1/)<br/>
 
 # References <br/>
