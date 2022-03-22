@@ -1,41 +1,43 @@
-* c:\users\91902\esim-workspace\lvds_drvr\lvds_drvr.cir
+* d:\serializer_lvds_dvr\lvds_drvr\lvds_drvr.cir
 
 .include NMOS-180nm.lib
 .include PMOS-180nm.lib
-m15 net-_m1-pad1_ net-_m10-pad1_ net-_m11-pad3_ net-_m11-pad3_ CMOSP W=100u L=100u M=1
-m11 net-_m11-pad1_ net-_m11-pad2_ net-_m11-pad3_ net-_m11-pad3_ CMOSP W=100u L=100u M=1
-m6 net-_m10-pad1_ net-_m10-pad1_ net-_m11-pad3_ net-_m11-pad3_ CMOSP W=100u L=100u M=1
-m5 net-_m11-pad2_ net-_m11-pad2_ net-_m11-pad3_ net-_m11-pad3_ CMOSP W=100u L=100u M=1
-m1 net-_m1-pad1_ net-_m1-pad2_ vob vob CMOSN W=100u L=100u M=1
-m2 net-_m1-pad1_ net-_m2-pad2_ voa voa CMOSN W=100u L=100u M=1
-m3 vob net-_m2-pad2_ net-_m16-pad1_ net-_m16-pad1_ CMOSN W=100u L=100u M=1
-m4 voa net-_m1-pad2_ net-_m16-pad1_ net-_m16-pad1_ CMOSN W=100u L=100u M=1
-m16 net-_m16-pad1_ net-_m11-pad1_ gnd gnd CMOSN W=100u L=100u M=1
-m12 net-_m11-pad1_ net-_m11-pad1_ gnd gnd CMOSN W=100u L=100u M=1
-m7 net-_m11-pad2_ voa net-_m13-pad1_ net-_m13-pad1_ CMOSN W=100u L=100u M=1
-m8 net-_m10-pad1_ vocm net-_m13-pad1_ net-_m13-pad1_ CMOSN W=100u L=100u M=1
-m10 net-_m10-pad1_ vocm net-_m10-pad3_ net-_m10-pad3_ CMOSN W=100u L=100u M=1
-m9 net-_m11-pad2_ vob net-_m10-pad3_ net-_m10-pad3_ CMOSN W=100u L=100u M=1
-m13 net-_m13-pad1_ net-_m13-pad2_ gnd gnd CMOSN W=100u L=100u M=1
-m14 net-_m10-pad3_ net-_m13-pad2_ gnd gnd CMOSN W=100u L=100u M=1
-vdd1 net-_m11-pad3_ gnd  dc 5
-vbias1 net-_m13-pad2_ gnd  dc 0.6
-v1  net-_m1-pad2_ gnd pulse(5 0.6 1n 1n 1n 50n 100n)
-v2  net-_m2-pad2_ gnd pulse(0.7 3 1n 1n 1n 50n 100n)
-* u1  net-_m1-pad2_ plot_v1
-* u2  net-_m2-pad2_ plot_v1
+* u5  vocm ic
+.ic v(vocm)=2.5
+m15 net-_m1-pad1_ net-_m10-pad1_ vdd vdd CMOSP W=90u L=0.8u M=1
+m11 net-_m11-pad1_ net-_m11-pad2_ vdd vdd CMOSP W=4.5u L=0.8u M=1
+m6 net-_m10-pad1_ net-_m10-pad1_ vdd vdd CMOSP W=4.5u L=0.8u M=1
+m5 net-_m11-pad2_ net-_m11-pad2_ vdd vdd CMOSP W=4.5u L=0.8u M=1
+m1 net-_m1-pad1_ din vob vob CMOSN W=92u L=0.2u M=1
+m2 net-_m1-pad1_ din_bar voa voa CMOSN W=92u L=0.2u M=1
+m3 vob din_bar net-_m16-pad1_ net-_m16-pad1_ CMOSN W=105u L=0.2u M=1
+m4 voa din net-_m16-pad1_ net-_m16-pad1_ CMOSN W=105u L=0.2u M=1
+m16 net-_m16-pad1_ net-_m11-pad1_ gnd gnd CMOSN W=56u L=0.8u M=1
+m12 net-_m11-pad1_ net-_m11-pad1_ gnd gnd CMOSN W=2.8u L=0.8u M=1
+m7 net-_m11-pad2_ voa net-_m13-pad1_ net-_m13-pad1_ CMOSN W=145u L=0.8u M=1
+m8 net-_m10-pad1_ vocm net-_m13-pad1_ net-_m13-pad1_ CMOSN W=145u L=0.8u M=1
+m10 net-_m10-pad1_ vocm net-_m10-pad3_ net-_m10-pad3_ CMOSN W=145u L=0.8u M=1
+m9 net-_m11-pad2_ vob net-_m10-pad3_ net-_m10-pad3_ CMOSN W=145u L=0.8u M=1
+m13 net-_m13-pad1_ vbias gnd gnd CMOSN W=4.5u L=0.8u M=1
+m14 net-_m10-pad3_ vbias gnd gnd CMOSN W=4.5u L=0.8u M=1
+vdd1 vdd gnd  dc 5
+vbias1 vbias gnd  dc 0.4
+v1  din gnd pulse(0 5 0.1n 0.1n 0.1n 10n 20n)
+v2  din_bar gnd pulse(5 0 0.1n 0.1n 0.1n 10n 20n)
+* u1  din plot_v1
+* u2  din_bar plot_v1
 * u3  vob plot_v1
 * u4  voa plot_v1
-.tran 0.1e-09 1200e-09 0e-09
+* u5  vocm ic
+.tran 0.1e-09 300e-09 0e-09
 
 * Control Statements 
 .control
 run
 print allv > plot_data_v.txt
 print alli > plot_data_i.txt
-plot v(net-_m1-pad2_)
-plot v(net-_m2-pad2_)
-plot v(vob)
-plot v(voa)
+
+plot v(din)  v(din_bar)  v(vob)  v(voa)
+ 
 .endc
 .end

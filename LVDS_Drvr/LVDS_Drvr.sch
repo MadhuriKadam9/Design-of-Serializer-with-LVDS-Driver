@@ -433,7 +433,7 @@ Wire Wire Line
 	6250 2950 6250 3400
 Connection ~ 6250 3400
 Wire Wire Line
-	6350 4250 6800 4250
+	6100 4250 6800 4250
 $Comp
 L DC vdd1
 U 1 1 621B0566
@@ -484,7 +484,7 @@ Connection ~ 6500 4250
 Wire Wire Line
 	6500 5300 6500 5500
 Wire Wire Line
-	900  1900 900  2200
+	900  1700 900  2200
 Wire Wire Line
 	900  3100 900  3300
 $Comp
@@ -507,17 +507,6 @@ F 1 "pulse" H 1350 4700 60  0000 C CNN
 F 2 "R1" H 1250 4750 60  0000 C CNN
 F 3 "" H 1550 4750 60  0000 C CNN
 	1    1550 4750
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR2
-U 1 1 621B0021
-P 900 5300
-F 0 "#PWR2" H 900 5050 50  0001 C CNN
-F 1 "GND" H 900 5150 50  0000 C CNN
-F 2 "" H 900 5300 50  0001 C CNN
-F 3 "" H 900 5300 50  0001 C CNN
-	1    900  5300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -639,7 +628,7 @@ Wire Wire Line
 Wire Wire Line
 	3250 3650 3250 4050
 Wire Wire Line
-	3250 4050 900  4050
+	3250 4050 800  4050
 Connection ~ 900  4050
 Wire Wire Line
 	1400 3650 1300 3650
@@ -648,7 +637,7 @@ Wire Wire Line
 Wire Wire Line
 	3300 3000 3300 4000
 Wire Wire Line
-	3300 4000 1550 4000
+	3300 4000 1400 4000
 Connection ~ 1550 4000
 Text GLabel 1950 3500 3    60   Input ~ 0
 vob
@@ -656,4 +645,43 @@ Text GLabel 2500 3500 3    60   Input ~ 0
 voa
 Connection ~ 1950 3350
 Connection ~ 2500 3300
+Text GLabel 700  4100 0    60   Input ~ 0
+Din
+Wire Wire Line
+	700  4100 800  4100
+Wire Wire Line
+	800  4100 800  4050
+Text GLabel 1400 4000 0    60   Input ~ 0
+Din_bar
+$Comp
+L GND #PWR2
+U 1 1 621B0021
+P 900 5300
+F 0 "#PWR2" H 900 5050 50  0001 C CNN
+F 1 "GND" H 900 5150 50  0000 C CNN
+F 2 "" H 900 5300 50  0001 C CNN
+F 3 "" H 900 5300 50  0001 C CNN
+	1    900  5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L IC U5
+U 1 1 6234A653
+P 6250 3100
+F 0 "U5" H 6550 3250 60  0000 C CNN
+F 1 "IC" H 6500 3450 60  0000 C CNN
+F 2 "" H 6250 3100 60  0000 C CNN
+F 3 "" H 6250 3100 60  0000 C CNN
+	1    6250 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 3050 6250 3050
+Connection ~ 6250 3050
+Text GLabel 6100 4250 0    60   Input ~ 0
+Vbias
+Connection ~ 6350 4250
+Text GLabel 900  1700 1    60   Input ~ 0
+Vdd
+Connection ~ 900  1900
 $EndSCHEMATC

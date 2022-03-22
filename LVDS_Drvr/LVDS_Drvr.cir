@@ -1,34 +1,35 @@
-* C:\Users\91902\eSim-Workspace\LVDS_Drvr\LVDS_Drvr.cir
+* D:\Serializer_Lvds_dvr\LVDS_Drvr\LVDS_Drvr.cir
 
-* EESchema Netlist Version 1.1 (Spice format) creation date: 03/09/22 15:05:42
+* EESchema Netlist Version 1.1 (Spice format) creation date: 03/18/22 20:53:02
 
 * To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
 * To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
 
 * Sheet Name: /
-M15  Net-_M1-Pad1_ Net-_M10-Pad1_ Net-_M11-Pad3_ Net-_M11-Pad3_ mosfet_p		
-M11  Net-_M11-Pad1_ Net-_M11-Pad2_ Net-_M11-Pad3_ Net-_M11-Pad3_ mosfet_p		
-M6  Net-_M10-Pad1_ Net-_M10-Pad1_ Net-_M11-Pad3_ Net-_M11-Pad3_ mosfet_p		
-M5  Net-_M11-Pad2_ Net-_M11-Pad2_ Net-_M11-Pad3_ Net-_M11-Pad3_ mosfet_p		
-M1  Net-_M1-Pad1_ Net-_M1-Pad2_ vob vob mosfet_n		
-M2  Net-_M1-Pad1_ Net-_M2-Pad2_ voa voa mosfet_n		
-M3  vob Net-_M2-Pad2_ Net-_M16-Pad1_ Net-_M16-Pad1_ mosfet_n		
-M4  voa Net-_M1-Pad2_ Net-_M16-Pad1_ Net-_M16-Pad1_ mosfet_n		
+M15  Net-_M1-Pad1_ Net-_M10-Pad1_ Vdd Vdd mosfet_p		
+M11  Net-_M11-Pad1_ Net-_M11-Pad2_ Vdd Vdd mosfet_p		
+M6  Net-_M10-Pad1_ Net-_M10-Pad1_ Vdd Vdd mosfet_p		
+M5  Net-_M11-Pad2_ Net-_M11-Pad2_ Vdd Vdd mosfet_p		
+M1  Net-_M1-Pad1_ Din vob vob mosfet_n		
+M2  Net-_M1-Pad1_ Din_bar voa voa mosfet_n		
+M3  vob Din_bar Net-_M16-Pad1_ Net-_M16-Pad1_ mosfet_n		
+M4  voa Din Net-_M16-Pad1_ Net-_M16-Pad1_ mosfet_n		
 M16  Net-_M16-Pad1_ Net-_M11-Pad1_ GND GND mosfet_n		
 M12  Net-_M11-Pad1_ Net-_M11-Pad1_ GND GND mosfet_n		
 M7  Net-_M11-Pad2_ voa Net-_M13-Pad1_ Net-_M13-Pad1_ mosfet_n		
 M8  Net-_M10-Pad1_ Vocm Net-_M13-Pad1_ Net-_M13-Pad1_ mosfet_n		
 M10  Net-_M10-Pad1_ Vocm Net-_M10-Pad3_ Net-_M10-Pad3_ mosfet_n		
 M9  Net-_M11-Pad2_ vob Net-_M10-Pad3_ Net-_M10-Pad3_ mosfet_n		
-M13  Net-_M13-Pad1_ Net-_M13-Pad2_ GND GND mosfet_n		
-M14  Net-_M10-Pad3_ Net-_M13-Pad2_ GND GND mosfet_n		
-vdd1  Net-_M11-Pad3_ GND DC		
-vbias1  Net-_M13-Pad2_ GND DC		
-v1  Net-_M1-Pad2_ GND pulse		
-v2  Net-_M2-Pad2_ GND pulse		
-U1  Net-_M1-Pad2_ plot_v1		
-U2  Net-_M2-Pad2_ plot_v1		
+M13  Net-_M13-Pad1_ Vbias GND GND mosfet_n		
+M14  Net-_M10-Pad3_ Vbias GND GND mosfet_n		
+vdd1  Vdd GND DC		
+vbias1  Vbias GND DC		
+v1  Din GND pulse		
+v2  Din_bar GND pulse		
+U1  Din plot_v1		
+U2  Din_bar plot_v1		
 U3  vob plot_v1		
 U4  voa plot_v1		
+U5  Vocm IC		
 
 .end
