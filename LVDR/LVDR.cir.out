@@ -1,0 +1,28 @@
+* d:\serializer_lvds_dvr\lvdr\lvdr.cir
+
+.include LVDS_Drvr.sub
+* u6  vocm ic
+.ic v(vocm)=2.5
+x1 net-_x1-pad1_ din din_bar vob voa vocm net-_x1-pad7_ LVDS_Drvr
+v3 net-_x1-pad1_ gnd  dc 5
+v4 net-_x1-pad7_ gnd  dc 0.4
+v1  din gnd pulse(0 5 0.1n 0.1n 0.1n 10n 20n)
+v2  din_bar gnd pulse(5 0 0.1n 0.1n 0.1n 10n 20n)
+* u4  voa plot_v1
+* u3  vob plot_v1
+* u1  din plot_v1
+* u2  din_bar plot_v1
+* u5  vocm plot_v1
+* u6  vocm ic
+.tran 0.1e-09 300e-09 0e-09
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+
+plot v(din)  v(din_bar)  v(vob)  v(voa)  
+
+.endc
+.end

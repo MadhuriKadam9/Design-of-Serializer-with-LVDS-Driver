@@ -1,0 +1,21 @@
+* D:\Serializer_Lvds_dvr\LVDR\LVDR.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 03/19/22 15:01:32
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+X1  Net-_X1-Pad1_ Din Din_bar Vob Voa Vocm Net-_X1-Pad7_ LVDS_Drvr		
+v3  Net-_X1-Pad1_ GND DC		
+v4  Net-_X1-Pad7_ GND DC		
+v1  Din GND pulse		
+v2  Din_bar GND pulse		
+U4  Voa plot_v1		
+U3  Vob plot_v1		
+U1  Din plot_v1		
+U2  Din_bar plot_v1		
+U5  Vocm plot_v1		
+U6  Vocm IC		
+
+.end

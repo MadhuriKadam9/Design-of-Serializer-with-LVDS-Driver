@@ -1,0 +1,28 @@
+* C:\FOSSEE\eSim\library\SubcircuitLibrary\LVDS_Drvr\LVDS_Drvr.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 03/18/22 22:11:50
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+M15  Net-_M1-Pad1_ Net-_M10-Pad1_ /Vdd /Vdd mosfet_p		
+M11  Net-_M11-Pad1_ Net-_M11-Pad2_ /Vdd /Vdd mosfet_p		
+M6  Net-_M10-Pad1_ Net-_M10-Pad1_ /Vdd /Vdd mosfet_p		
+M5  Net-_M11-Pad2_ Net-_M11-Pad2_ /Vdd /Vdd mosfet_p		
+M1  Net-_M1-Pad1_ /Din /Vob /Vob mosfet_n		
+M2  Net-_M1-Pad1_ /Din_bar /Voa /Voa mosfet_n		
+M3  /Vob /Din_bar Net-_M16-Pad1_ Net-_M16-Pad1_ mosfet_n		
+M4  /Voa /Din Net-_M16-Pad1_ Net-_M16-Pad1_ mosfet_n		
+M16  Net-_M16-Pad1_ Net-_M11-Pad1_ GND GND mosfet_n		
+M12  Net-_M11-Pad1_ Net-_M11-Pad1_ GND GND mosfet_n		
+M7  Net-_M11-Pad2_ /Voa Net-_M13-Pad1_ Net-_M13-Pad1_ mosfet_n		
+M8  Net-_M10-Pad1_ /Vocm Net-_M13-Pad1_ Net-_M13-Pad1_ mosfet_n		
+M10  Net-_M10-Pad1_ /Vocm Net-_M10-Pad3_ Net-_M10-Pad3_ mosfet_n		
+M9  Net-_M11-Pad2_ /Vob Net-_M10-Pad3_ Net-_M10-Pad3_ mosfet_n		
+M13  Net-_M13-Pad1_ /Vbias GND GND mosfet_n		
+M14  Net-_M10-Pad3_ /Vbias GND GND mosfet_n		
+U1  /Vdd /Din /Din_bar /Vob /Voa /Vocm /Vbias PORT		
+U2  /Vocm IC		
+
+.end
