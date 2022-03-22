@@ -37,6 +37,16 @@ eSim Open Source EDA Tool is used here. <br/>
 <img width="819" alt="Serializer_schematic" src="https://user-images.githubusercontent.com/88900482/157653926-8f0c5700-7535-4769-b27d-7650452599bd.PNG">
 
 
+## 10 bit Parallel data converted to opposite serial data signals by PISO and Buffer
+
+![final wave1](https://user-images.githubusercontent.com/88900482/159416469-890fc0dc-255f-49c5-9ad7-a533fc294c23.jpeg)
+
+
+## Opposite Serial data converted to Low voltage differential signals Voa and Vob of 500mVp-p 
+
+![final-waveform2](https://user-images.githubusercontent.com/88900482/159415960-297fc5bc-a8ba-4988-9b77-018d44f3bbb4.jpeg)
+
+
 ## Parallel Input Serial Output (PISO) and Buffer Digital Block
 
 ### PISO Symbol and Waveforms
